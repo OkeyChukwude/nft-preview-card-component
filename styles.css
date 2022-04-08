@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hwb(215 18% 64%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: "Outfit" sans-serif;
+    font-size: 18px;
+    background-color: var(--main-bg);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    width: 450px;
+    background-color: var(--card-bg);
+    color: var(--soft-blue);
+    padding: 25px 25px;
+    border-radius: 2%;
+    font-weight:  300;
+    line-height: 26px;
+    margin: 50px auto;
+}
+
+.card h2 {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 22px;
+    line-height: 28px;
+    margin: 20px 0 10px 0;
+}
+
+.card h2:hover {
+    color: var(--cyan);
+}
+
+.nft-card-image {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 15px 0;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px;
+}
+
+.price, 
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.price img, 
+.time img{
+    margin-right: 5px;
+}
+
+.img-overlay {
+    position: absolute;
+    background-color: var(--cyan);
+    width: 400px;
+    height: 400px;
+    top: 25px;
+    left: 25px;
+    border-radius: 2%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-overlay:hover {
+    opacity: 0.6;
+    transition: 1s;
+}
+
+.price:first-child {
+    color: var(--cyan);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+}
+
+.creator img {
+    width: 50px;
+    margin-right: 20px;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+}
+
+.name {
+    color: var(--white)
+}
+
+.name:hover {
+    color: var(--cyan);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
